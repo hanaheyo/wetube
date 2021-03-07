@@ -1,11 +1,18 @@
 {
-  "name": "wetube",
-  "version": "1.0.0",
-  "description": "Cloning Youtube with Vanila and NodeJS",
-  "main": "index.js",
-  "author": "Hana Kim",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+    "name": "wetube",
+    "version": "1.0.0",
+    "description": "Cloning Youtube with Vanila and NodeJS",
+    "main": "index.js",
+    "author": "Hana Kim",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/node": "^7.13.0",
+        "express": "^4.17.1"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.13.8"
+    }
 }
