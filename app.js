@@ -6,6 +6,7 @@ import bodyParser from "body-parser";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
+import routes from "./routes";
 
 const app = express();
 
@@ -16,8 +17,8 @@ app.use(helmet());
 app.use(morgan("dev"));
 
 // Seperate Url
-app.use("/", globalRouter);
-app.use("/user", userRouter);
-app.use("/video", videoRouter);
+app.use(routes.home, globalRouter);
+app.use(routes.user, userRouter);
+app.use(routes.videos, videoRouter);
  
 export default app; // 누군가 내 파일을 import 하면, app object를 주겠다는 의미
