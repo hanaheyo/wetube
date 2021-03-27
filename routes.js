@@ -5,13 +5,13 @@ const HOME = "/";
 const JOIN = "/join";
 const LOGIN = "/login";
 const LOGOUT = "/logout";
-const Search = "/search";
+const SEARCH = "/search";
 
 // Users
 const USERS = "/users";
 const USER_DETAIL = "/:id";
 const EDIT_PROFILE = "/edit-profile";
-const CHANGE_PASSWORD = "change-password";
+const CHANGE_PASSWORD = "/change-password";
 
 // Videos
 const VIDEOS = "/videos";
